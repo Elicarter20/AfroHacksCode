@@ -1,0 +1,32 @@
+server handlers
+	userhasgiventoday
+		returns bool
+	stats
+		team size, total donations, total team donations
+	play
+		give = true or false
+	settings
+		creates account if there isn't one already
+		vars: default donation amount
+
+
+login
+users must be able to register
+they're logged in when they're logged in to 
+firebase for login
+
+chrome extension
+should only be activated on first browser opening that day
+group users together
+click button should connect to backend
+backend should know who they are and which group they're in
+button should trigger donation
+you should be able to chat with your team
+
+#should securely hold your financial details
+
+
+tells you what you and your team members have collectively donated
+
+
+

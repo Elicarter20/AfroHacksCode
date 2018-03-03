@@ -32,13 +32,13 @@
     
     		<img src="profile.png" style="height:100%;width:50%; margin-left:170px" align="center">
     		<div style="font-size: 30px; margin-bottom:40px;text-align:center">
-    			Username: <br>  Email: <br>
-    		Your Hashes: 17.3k  
+    			Username: {{ user_name }} <br>  Email: {{ user_email }} <br>
+    		Your Hashes: {{ user_hashes }}
     		<br> 
-    		Team Hashes:
-    		 142.7k
-    		<p align="center" class = "onHover"> Find Group </p> 
-			<p> Exit Group </p>
+    		Team Hashes: {{ team_hashes }}
+    		<a href="/play/?give=1" target="hiddenframe"><p align="center" class = "onHover"> Find Group </p></a> 
+		  	<a href="/play/?give=0" target="hiddenframe"><p> Exit Group </p></a>
+        <iframe hidden name="hiddenframe">nothing to see here</iframe>
   		</div>
     		
   		</div>
@@ -50,7 +50,16 @@
   <div class="column" >
     <h2  style= "margin-bottom:0px">Your Team</h2>
     <img src= "table.png">
-    
+    <ul>
+      <li>
+      {% for member in team %}
+        {{ member.email }}
+        {{ member.hashes }}
+      {% endfor %}
+      </li>
+      <!-- chat box here -->
+
+    </ul>
   </div>
 </div>
 

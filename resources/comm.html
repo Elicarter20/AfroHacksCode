@@ -1,0 +1,80 @@
+<html>
+<link rel="stylesheet" href="hack.css">
+<link rel ="stylesheet" href="https://fonts.googleapis.com/css?family=Righteous&effect=fire|3d-float">
+
+
+
+<head>
+<title>Wakanda Science Exchange</title>
+	<header>
+		
+
+		<h1 class="floating-box">Wakanda Science Exchange</h1>
+		<h2>
+			<nav>
+			<ul class="menu">
+				<li><a href="home.html">Home</a></li>
+				<li >|</li>
+				<li ><a class= "active" href="comm.html">Community</a></li>
+				<li >|</li>
+				<li><a href="about.html">About Us</a></li>
+			</ul>
+			</nav?>
+		</h2>
+	</header>
+<img src="topanth.png"></img>
+</head>
+<body >
+
+<div class="row">
+  <div class="column">
+    <h2></h2>
+    
+    		<img src="profile.png" style="height:100%;width:50%; margin-left:170px" align="center">
+    		<div style="font-size: 30px; margin-bottom:40px;text-align:center">
+    			Username: {{ user_name }} <br>  Email: {{ user_email }} <br>
+    		Your Hashes: {{ user_hashes }}
+    		<br> 
+    		Team Hashes: {{ team_hashes }}
+    		<a href="/play/?give=1" target="hiddenframe"><p align="center" class = "onHover"> Find Group </p></a> 
+		  	<a href="/play/?give=0" target="hiddenframe"><p> Exit Group </p></a>
+        <iframe hidden name="hiddenframe">nothing to see here</iframe>
+  		</div>
+    		
+  		</div>
+  		
+  	
+	
+
+
+  <div class="column" >
+    <h2  style= "margin-bottom:0px">Your Team</h2>
+    <img src= "table.png">
+    <ul>
+      <li>
+      {% for member in team %}
+        {{ member.email }}
+        {{ member.hashes }}
+      {% endfor %}
+      </li>
+      <!-- chat box here -->
+
+    </ul>
+  </div>
+</div>
+
+	
+
+<footer >	
+<div><img src= "black.png" style="height:2%;width:100%; margin-top:0px"><br></div>
+
+<div>Join Teams, Create Good<br></div>
+
+</footer>
+
+
+</body>
+
+
+
+</html>
