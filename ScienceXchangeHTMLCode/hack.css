@@ -1,0 +1,161 @@
+@import
+url("https://fonts.googleapis.com/css?family=Varela+Round");
+url("https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple|3d-float");
+html {
+  font-family:Righteous;
+}
+
+
+
+
+
+
+
+
+header{
+	font-family:Righteous;
+	display: inline;
+}
+h1{
+	text-shadow: 2px 2px 5px #514979;
+
+	text-align:center;
+	font-size:45px;
+
+	
+}
+li a {
+    
+    color: #666;
+
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+	color:#C99C43;
+    }
+
+li a.active {
+    color: #514979;
+}
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.floating-box {
+    display: inline-block;
+    width: 400px;
+    height: 75px;
+    margin: 10px;
+      
+}
+
+.coinhive-miner{
+margin: auto;
+    
+}
+.imageContainer {
+      color:white;
+      text-align:center;
+      padding-top:40px;
+
+      font-size:25px;
+       height:20%;
+       background-image: url(colors.png);
+       background-size:100%;
+       margin-top:0px;
+       margin-bottom:0px;
+ }
+
+h2{
+
+	font-family:Righteous;
+	margin-top:0px;
+	margin-bottom:50px;
+	height:75px;
+	font-size:40px;
+	display: inline;
+	float:right;
+
+}
+li{
+	display: inline;
+}
+body{
+font-family:Righteous;
+	
+	
+}
+img{
+	width:100%;
+
+}
+h3{
+	color:#514979;
+	font-family:Righteous;
+	font-size:35px;
+}
+form,{
+	font-size:30px;
+}
+
+p{
+	font-size:30px;
+	font-family:Righteous;
+	display:inline-block;
+	color:#666;
+	margin-top:0px;
+	padding:6px;
+	font-size:20px;
+	width: 150px;
+    height: 50px;
+    margin-left: 250px;
+    margin-right: 200px;
+    text-align:center;
+    background-color: black;
+
+
+
+}
+* {
+    box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+.inline{
+	display: inline-block;
+}
+
+p:hover:not(.active) {
+    
+    color:#C99C43;
+}
+footer{
+	margin-top:260px;
+	padding: 1em;
+    color: black;
+    clear: left;
+    text-align: center;
+    font-size:35px;
+}
